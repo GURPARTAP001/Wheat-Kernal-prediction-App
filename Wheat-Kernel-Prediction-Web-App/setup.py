@@ -20,7 +20,7 @@ setup(
 name='wheatkernel',
 version='0.0.1',
 author='Gurpartap',
-author_email='gurpartap612@gmail.com',
+author_email='gurpartap6125@gmail.com',
 packages=find_packages(),
 install_requires=get_requirements('requirements.txt')
 
