@@ -19,8 +19,8 @@ def get_requirements(file_path:str)->List[str]:
 setup(
 name='wheatkernel',
 version='0.0.1',
-author='Ramneek',
-author_email='ramneekkaur0307@gmail.com',
+author='Gurpartap',
+author_email='gurpartap612@gmail.com',
 packages=find_packages(),
 install_requires=get_requirements('requirements.txt')
 
