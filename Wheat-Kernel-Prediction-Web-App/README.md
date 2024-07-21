@@ -11,13 +11,13 @@ Home Page:
 ![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/1.png)
 
 About Section:
-![Login]([https://github.com/meek0307/Wheat-Kernel-Prediction-Web-App/blob/main/Screenshots/2.png?raw=true](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/2.png))
+![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/2.png)
 
 Predictor:
-![Login]([https://github.com/meek0307/Wheat-Kernel-Prediction-Web-App/blob/main/Screenshots/3.png?raw=true](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/3.png))
+![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/3.png)
 
 Results:
-![Login]([https://github.com/meek0307/Wheat-Kernel-Prediction-Web-App/blob/main/Screenshots/4.png?raw=true](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/4.png))
+![Login]((https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/4.png)
 Tech Stack Used
 Front-End: HTML, CSS, Bootstrap
 
