@@ -14,7 +14,7 @@ Predictor:
 ![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/3.png)
 
 Results:
-![Login]((https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/4.png)
+![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/4.png)
 Tech Stack Used
 Front-End: HTML, CSS, Bootstrap
 
