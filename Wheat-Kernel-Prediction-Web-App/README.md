@@ -10,9 +10,6 @@ dataset link: https://archive.ics.uci.edu/ml/datasets/seeds
 Home Page:
 ![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/1.png)
 
-About Section:
-![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/2.png)
-
 Predictor:
 ![Login](https://github.com/GURPARTAP001/Wheat-Kernal-prediction-App/blob/main/Wheat-Kernel-Prediction-Web-App/Screenshots/3.png)
 
