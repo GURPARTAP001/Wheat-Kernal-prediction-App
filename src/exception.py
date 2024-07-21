@@ -1,8 +1,8 @@
-import sys
+import sys  #the sys lib have the exception
 from src.logger import logging
 
 def error_message_detail(error,error_detail:sys):
-    _,_,exc_tb=error_detail.exc_info()
+    _,_,exc_tb=error_detail.exc_info()  #error_detail.exc_info() it give the details about the exception
     file_name=exc_tb.tb_frame.f_code.co_filename
     error_message="Error occured in python script name [{0}] line number [{1}] error message[{2}]".format(
      file_name,exc_tb.tb_lineno,str(error))
