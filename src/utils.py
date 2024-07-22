@@ -9,7 +9,7 @@ from sklearn.model_selection import GridSearchCV,RandomizedSearchCV
 
 from src.exception import CustomException
 
-def save_object(file_path, obj):
+def save_object(file_path, obj):#THIS FUNCTION IS FOR ADDING THE PATH AND SAVING THE FILE IN THE HARDDRIVE
     try:
         dir_path = os.path.dirname(file_path)
 

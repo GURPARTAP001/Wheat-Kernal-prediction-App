@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import numpy as np 
 import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
+from sklearn.impute import SimpleImputer #used to handle the missing values in the data
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 
@@ -31,10 +31,10 @@ class DataTransformation:
             
             numerical_columns = ["Area","Perimeter", "Compactness", "Length_of_kernel", "Width_of_kernel","Asymmetry_coefficient","Length_of_kernel_groove"]
             
-            num_pipeline= Pipeline(
+            num_pipeline= Pipeline(#here we are creating the pipeline for the numerical features
                 steps=[
-                ("imputer",SimpleImputer(strategy="median")),
-                ("scaler",StandardScaler())
+                ("imputer",SimpleImputer(strategy="median")),#imputer help in hadling the missing values
+                ("scaler",StandardScaler())#here we are doing the standard scaling
 
                 ]
             )
@@ -55,7 +55,7 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
         
-    def initiate_data_transformation(self,train_path,test_path):
+    def initiate_data_transformation(self,train_path,test_path):#IN THIS FUNCTION WE START THE DATA TRANSFORMATION
 
         try:
             train_df=pd.read_csv(train_path)
@@ -65,9 +65,9 @@ class DataTransformation:
 
             logging.info("obtaining preprocessing object")
 
-            preprocessing_obj=self.get_data_transformer_object()
+            preprocessing_obj=self.get_data_transformer_object()#HERE WE ARE CALLING THE FUNCTION FROM ABOVE
 
-            target_column_name="Class (1, 2, 3)"
+            target_column_name="Class (1, 2, 3)"#THESE ARE THE COLUMN OF THE OUTPUT
             numerical_columns = ["Area","Perimeter", "Compactness", "Length_of_kernel", "Width_of_kernel","Asymmetry_coefficient","Length_of_kernel_groove" ]
 
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
