@@ -1,5 +1,11 @@
 import os
 import sys
+
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+
+
 from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
@@ -13,36 +19,37 @@ from src.components.data_transformation import DataTransformationConfig
 from src.components.model_trainer import ModelTrainerConfig
 from src.components.model_trainer import ModelTrainer
 
-@dataclass
-class DataIngestionConfig:
+@dataclass #this help in defining the variable in the class
+class DataIngestionConfig: #this function save the path for the input to the ingestion like where to save diff things like the test data, training data and raw data
     train_data_path: str=os.path.join('artifacts',"train.csv")
     test_data_path: str=os.path.join('artifacts',"test.csv")
     raw_data_path: str=os.path.join('artifacts',"data.csv")
 
 class DataIngestion:
     def __init__(self):
-        self.ingestion_config=DataIngestionConfig()
+        self.ingestion_config=DataIngestionConfig() #save tha path defined in tha above function
 
     def initiate_data_ingestion(self):
-        logging.info("Entered the data ingestion method or component")
+        logging.info("Entered the data ingestion method or component") #logging the action
         try:
-            df=pd.read_csv('notebook\data\seeds_dataset.csv')
+            df=pd.read_csv('notebook\data\seeds_dataset.csv') #reading the data from tha file
             logging.info('Read the dataset as dataframe')
 
-            os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
+            os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True) #creating the file defined at the paths defined above in dataingestionconfig
 
-            df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True)
+            df.to_csv(self.ingestion_config.raw_data_path,index=False,header=True) #saving the raw data path
 
             logging.info("Train test split initiated")
             train_set,test_set=train_test_split(df,test_size=0.2,random_state=42)
 
-            train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True)
+            train_set.to_csv(self.ingestion_config.train_data_path,index=False,header=True) #saving the traing set of data
 
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
 
             logging.info("Inmgestion of the data iss completed")
 
             return(
+                #returing the below to path for the data transformation
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path
 
